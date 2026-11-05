@@ -1,0 +1,6 @@
+{
+  "name": "Deepak Bhai Birthday Surprise 3D",
+  "description": "Premium 3D interactive Birthday surprise experience for Deepak Bhai (7 November) with luxury black, gold and red theme, 3D cake cutting, emotional message, instrumental music and QR code.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

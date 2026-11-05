@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+  .font-script {
+    font-family: 'Great Vibes', cursive;
+  }
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+  .font-sans {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #FFE79A 0%, #D4AF37 35%, #FFF6BD 50%, #AA771C 75%, #FDF0A6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gold-border {
+    border-image: linear-gradient(135deg, #d4af37, #f3e5ab, #aa771c, #d4af37) 1;
+  }
+
+  .gold-shimmer-box {
+    background: linear-gradient(145deg, rgba(30, 24, 12, 0.85) 0%, rgba(12, 10, 8, 0.95) 100%);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.25), inset 0 0 15px rgba(212, 175, 55, 0.15);
+  }
+
+  .red-gold-glow {
+    box-shadow: 0 0 35px rgba(220, 38, 38, 0.4), 0 0 15px rgba(212, 175, 55, 0.3);
+  }
+}
+
+@keyframes goldShine {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1.5deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.8; filter: drop-shadow(0 0 12px rgba(250, 204, 21, 0.6)); }
+  50% { opacity: 1; filter: drop-shadow(0 0 24px rgba(239, 68, 68, 0.8)); }
+}
+
+.animate-gold-shine {
+  background-size: 200% auto;
+  animation: goldShine 4s linear infinite;
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 9999px;
+}
